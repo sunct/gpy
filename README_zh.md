@@ -63,6 +63,17 @@ func main() {
 	fmt.Println(gpy.Pinyin(hans, a))
 	// [[zho1ng] [guo2] [re2n]]
 
+
+	
+	// 首字母风格
+	a.Style = gpy.FirstLetter
+	fmt.Println(gpy.Pinyin(hans, a))
+	// [[z] [g] [r]]
+	
+	
+	... ...
+	
+	
 	// 开启多音字模式
 	a = gpy.NewArgs()
 	a.Heteronym = true
